@@ -291,7 +291,7 @@ class IAAAffine(DualIAATransform):
     ):
         super(IAAAffine, self).__init__(always_apply, p)
         self.scale = to_tuple(scale, 1.0)
-        self.translate_percent = to_tuple(translate_percent, 0)
+        self.translate_percent = translate_percent
         self.translate_px = to_tuple(translate_px, 0)
         self.rotate = to_tuple(rotate)
         self.shear = to_tuple(shear)
